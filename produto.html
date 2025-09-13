@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Produtos</title>
+    <link rel="stylesheet" href="produtos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="produto.js" async></script>
+</head>
+
+<body class="pagina-fundo">
+
+    <header class="cabecalho">
+        <div class="container-principal">
+            <h1 class="titulo-site"><a href="inicio.html">Elite Watches</a></h1>
+            <nav>
+                <ul class="menu-navegacao">
+                    <li><a href="inicio.html" onclick="showScreen('home')" class="link-menu">Início</a></li>
+                    <li><a href="produtos.html" onclick="showScreen('products')" class="link-menu">Produtos</a></li>
+                    <li><a href="#" onclick="showScreen('cart')" class="link-menu">Carrinho</a></li>
+                    <li><a href="#" onclick="showScreen('favorites')" class="link-menu">Favoritos</a></li>
+                    <li><a href="#" onclick="showScreen('blog')" class="link-menu">Blog</a></li>
+                    <li><a href="#" onclick="showScreen('profile')" class="link-menu">Perfil</a></li>
+                    <li><a href="#" onclick="showScreen('admin')" class="link-menu" id="admin-link"
+                            style="display:none;">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contenedor">
+
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Rolex Submariner</span>
+                <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-majesty/c_limit,w_1920/v1/catalogue/2025/upright-c/m124060-0001.jpg" alt="" class="img-item">
+                <span class="precio-item">$84.800</span>
+                <button class="boton-item">Adicione ao Carrinho</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Rolex Daytona</span>
+                <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-majesty/c_limit,w_1920/v1/catalogue/2025/upright-c/m126500ln-0001.jpg" alt="" class="img-item">
+                <span class="precio-item">$420.500</span>
+                <button class="boton-item">Adicione ao Carrinho</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Royal Oak Concept Black Panther</span>
+                <img src="https://cdn.thewatchpages.com/app/uploads/2022/02/02111350/audemars-piguet-royal-oak-concept-black-panther-flying-tourbillon-26623bcggd077ca01.jpg" alt="" class="img-item">
+                <span class="precio-item">$1.867.435</span>
+                <button class="boton-item">Adicione ao Carrinho</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Audemars Piguet Royal Oak Perpetual Calendar</span>
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR4mA_E4AIQcc4941GE4_0FYd0w-jkivfCJHu9YZiuXq5Cr9EErVfehXpGPmbMe8PK7qBNts6Op-RyraAHzBt6WOtzAIHZO3F6xc0lJJT08w9Vuh1UfjgE2" alt="" class="img-item">
+                <span class="precio-item">$8.853.593</span>
+                <button class="boton-item">Adicione ao Carrinho</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Jaeger-LeCoultre Reverso</span>
+                <img src="https://img.jaeger-lecoultre.com/product-slider-hero-mobile-3/71261befb634d69432255b6c9559d0ebbc8e9762.jpg" alt="" class="img-item">
+                <span class="precio-item">$45.092</span>
+                <button class="boton-item">Adicione ao Carrinho</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Hybris Mechanica à Grande Sonnerie</span>
+                <img src="https://www.thejewelleryeditor.com/media/images/filer_public/19/bd/19bd46e2-b90c-4caa-8b0f-59ce7af16b37/jaeger_lecoultre_hybris_mechanica_a_grande_sonnerie.jpg" alt="" class="img-item">
+                <span class="precio-item">$2.500.000</span>
+                <button class="boton-item">Adicione ao Carrinho</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Speedmaster Moonwatch Professional</span>
+                <img src="https://taniajoias.com.br/admin/upload/item/31032425001001-OMEGA-Speedmaster-Moonwatch-Professional-Co-Axial-imagem-164.png" alt="" class="img-item">
+                <span class="precio-item">$135.000</span>
+                <button class="boton-item">Adicione ao Carrinho</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Speedmaster Ref. 2915-1 (1957)</span>
+                <img src="https://sothebys-md.brightspotcdn.com/dims4/default/66389f8/2147483647/strip/true/crop/2000x2000+0+0/resize/2048x2048!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2Fcb%2F6a%2F3a82e89a415597938f5e5a27a237%2Fge2104-bzghw-1.jpg" alt="" class="img-item">
+                <span class="precio-item">$3.500.000</span>
+                <button class="boton-item">Adicione ao Carrinho</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Villeret Ultraplate</span>
+                <img src="https://img.chrono24.com/images/uhren/24876821-udq3ru5uoqzsqnf7h9yykl03-ExtraLarge.jpg" alt="" class="img-item">
+                <span class="precio-item">$35.800</span>
+                <button class="boton-item">Adicione ao Carrinho</button>
+            </div>
+        </div>
+
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Seu Carrinho</h2>
+            </div>
+
+            <div class="carrito-items">
+
+                <div class="carrito-item">
+                    <img src="https://img.chrono24.com/images/uhren/24876821-udq3ru5uoqzsqnf7h9yykl03-ExtraLarge.jpg" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Villeret Ultraplate</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$35.800,00</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7-majesty/c_limit,w_1920/v1/catalogue/2025/upright-c/m126500ln-0001.jpg" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Rolex Daytona</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$420.500,00</span>
+                    </div>
+                    <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Total</strong>
+                    <span class="carrito-precio-total">
+                        $876.800,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+       <footer class="rodape">
+        <p>© Elite Watches. Todos os direitos reservados.</p>
+        <div class="espaco-links">
+            <a href="suporte.html" onclick="showScreen('support')">Suporte</a>
+            <a href="notificaçao.html" onclick="showScreen('notifications')">Notificações</a>
+        </div>
+    </footer>
+</body>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+ .pagina-fundo {
+     background-color: whitesmoke;
+     color: #111827;
+ }
+
+ .cabecalho {
+     background-color: #111827;
+     color: white;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+ }
+
+ .container-principal {
+     max-width: 1280px;
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-left: 1rem;
+     padding-right: 1rem;
+ }
+
+ .titulo-site {
+     font-size: 1.5rem;
+     font-weight: 700;
+ }
+
+ .menu-navegacao {
+     display: flex;
+     gap: 1.5rem;
+ }
+
+ .link-menu:hover {
+     text-decoration: underline;
+ }
+
+ .conteudo-principal {
+     background-color: whitesmoke;
+     text-align: center;
+     border: 2px solid white;
+ }
+
+ .titulo-notificacoes {
+     font-size: 2rem;
+     font-weight: 700;
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+     text-align: start;
+     margin: 1rem;
+ }
+
+ .notificacao {
+     margin: 1rem 0;
+ }
+
+ .mensagem-notificacao {
+     position: relative;
+     background-color: white;
+     border: 3px solid rgb(180, 180, 180);
+     width: 50%;
+     height: 65px;
+     border-radius: 6px;
+     border-left-color: rgb(207, 207, 18);
+     padding: 1rem;
+     margin-left: 1rem;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+     font-size: 1rem;
+     color: black;
+ }
+
+ .data-notificacao {
+     position: absolute;
+     bottom: 5px;
+     right: 10px;
+     font-size: 0.75rem;
+     color: gray;
+ }
+
+
+ .rodape {
+     background-color: #111827;
+     color: white;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+     text-align: center;
+     
+   
+ }
+
+ .espaco-links {
+     margin-top: 0.5rem;
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+ }
+
+ .titulo-site{
+    cursor: pointer;
+ }

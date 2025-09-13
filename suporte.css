@@ -1,0 +1,201 @@
+/* Variáveis CSS */
+:root {
+    --dark: #0c0c0c;
+    --white: #fff;
+    --purple: #5959ff;
+    --gray: #949494;
+    --gray2: #cccccc;
+    --header-bg: #111827; /* Cor de fundo do cabeçalho */
+    --header-text: white; /* Cor do texto do cabeçalho */
+    --page-bg: whitesmoke; /* Cor de fundo da página */
+    --page-text: #111827; /* Cor do texto da página */
+}
+
+/* Estilos Globais */
+html {
+    font-family: 'Inter', sans-serif;
+    
+}
+
+body {
+    background-color: var(--gray); 
+    color: var(--page-text); 
+    margin: 0;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column; /* Para o footer ficar no final */
+    min-height: 100vh; 
+}
+
+
+.cabecalho {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 1rem 0;
+}
+
+.container-principal {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.titulo-site {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.menu-navegacao {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.link-menu {
+    color: var(--header-text);
+    text-decoration: none;
+}
+
+.link-menu:hover {
+    text-decoration: underline;
+}
+
+
+.conteudo-principal {
+    max-width: 1280px;
+    margin: 2rem auto; /* Centraliza e adiciona margem superior/inferior */
+    padding: 0 1rem;
+    flex-grow: 1; /* Permite que o conteúdo principal ocupe o espaço restante */
+}
+
+
+.box-questao {
+    background-color: var(--white);
+    margin: 3rem auto;
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    width: 600px; 
+    height: 800px; 
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.header {
+    background-color: var(--header-bg);
+    border-radius: 10px 10px 0 0;
+    color: var(--white);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+}
+
+.historico {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--gray2); /* Adiciona uma linha para separar do footer */
+}
+
+.footer {
+    background-color: var(--header-bg);
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+}
+
+
+#mensagem-input {
+    flex-grow: 1; 
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid var(--gray); 
+    padding: 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s ease; 
+}
+
+#mensagem-input:focus {
+    border-color: var(--purple); 
+}
+
+
+#enviar-button {
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--white);
+    color: var(--purple);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+#enviar-button:hover {
+    background-color: var(--gray);
+    color: var(--white); 
+}
+
+
+.box-my-message {
+    text-align: right;
+    margin: 10px 0;
+}
+
+.my-message {
+    display: inline-block;
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+    text-align: left; /* Garante que o texto dentro da bola esteja alinhado à esquerda */
+}
+
+.box-response-message {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.chat-response {
+    display: inline-block;
+    background-color: var(--gray2);
+    color: var(--dark);
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+
+footer {
+    background-color: var(--header-bg); 
+    color: var(--header-text);
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto; 
+}
+
+footer a {
+    color: var(--header-text);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

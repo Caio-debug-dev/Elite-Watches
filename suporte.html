@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suporte - Elite Watches</title>
+    <link rel="stylesheet" href="suporte.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pagina-fundo">
+    
+    <header class="cabecalho">
+        <div class="container-principal">
+           <h1 class="titulo-site"><a href="inicio.html">Elite Watches</a></h1>
+            <nav>
+                <ul class="menu-navegacao">
+                    <li><a href="inicio.html" onclick="showScreen('home')" class="link-menu">Início</a></li>
+                    <li><a href="#" onclick="showScreen('products')" class="link-menu">Produtos</a></li>
+                    <li><a href="#" onclick="showScreen('cart')" class="link-menu">Carrinho</a></li>
+                    <li><a href="#" onclick="showScreen('favorites')" class="link-menu">Favoritos</a></li>
+                    <li><a href="#" onclick="showScreen('blog')" class="link-menu">Blog</a></li>
+                    <li><a href="#" onclick="showScreen('profile')" class="link-menu">Perfil</a></li>
+                    <li><a href="#" onclick="showScreen('admin')" class="link-menu" id="admin-link"
+                            style="display:none;">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<div class="box-questao">
+        <div class="header">
+            <p>Suporte Elite Whatch</p>
+        </div>
+        <p id="status"></p>
+        <div id="Historico" class="historico">
+            <!--aqui ira o chat-->
+        </div>
+        <div class="footer">
+            <input type="text" placeholder="Digite sua mensagem..." id="mensagem-input" />
+            <button id="enviar-button" onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+   
+
+    <footer class="bg-gray-900 text-white py-4 text-center">
+        <p>© Elite Watches. Todos os direitos reservados.</p>
+        <div class="mt-2 space-x-4">
+            <a href="suporte.html" onclick="showScreen('support')" class="hover:underline">Suporte</a>
+            <a href="notificaçao.html" onclick="showScreen('notifications')" class="hover:underline">Notificações</a>
+        </div>
+    </footer>
+
+    <script src="suporte.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Watches</title>
+    <link rel="stylesheet" href="inicio.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="pagina-fundo">
+    
+    <header class="cabecalho">
+        <div class="container-principal">
+            <h1 class="titulo-site"><a href="inicio.html">Elite Watches</a></h1>
+            <nav>
+                <ul class="menu-navegacao">
+                    <li><a href="inicio.html" onclick="showScreen('home')" class="link-menu">Início</a></li>
+                    <li><a href="produto.html" onclick="showScreen('products')" class="link-menu">Produtos</a></li>
+                    <li><a href="#" onclick="showScreen('cart')" class="link-menu">Carrinho</a></li>
+                    <li><a href="#" onclick="showScreen('favorites')" class="link-menu">Favoritos</a></li>
+                    <li><a href="#" onclick="showScreen('blog')" class="link-menu">Blog</a></li>
+                    <li><a href="#" onclick="showScreen('profile')" class="link-menu">Perfil</a></li>
+                    <li><a href="#" onclick="showScreen('admin')" class="link-menu" id="admin-link"
+                            style="display:none;">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+
+        <section id="home-screen" class="inicio">
+            <div class="imagemprincipal">
+                <h2 class="titulo-destaque">Relógios de Luxo para Você</h2>
+                <p class="texto-destaque">Descubra a elegância e a precisão dos nossos relógios exclusivos.</p>
+                <div class="centro">
+                    <button onclick="showScreen('products')" class="botao-dourado">Ver Produtos</button>
+                </div>
+            </div>
+            <div class="sevico">
+                <div class="cartao-servico">
+                    <h3 class="titulo-servico">Serviços</h3>
+                    <p>Troca garantida, suporte 24/7.</p>
+                </div>
+                <div class="cartao-servico">
+                    <h3 class="titulo-servico">Garantia</h3>
+                    <p>Garantia de fabricante original.</p>
+                </div>
+                <div class="cartao-servico">
+                    <h3 class="titulo-servico">Envio</h3>
+                    <p>Frete grátis em compras acima de R$ 500.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="products-screen" class="screen fade-in">
+            <h2 class="titulo-destaque">Nossos Relógios</h2>
+            <div class="mb-4">
+                <select id="category-filter" class="border p-2 rounded">
+                    <option>Todas as Categorias</option>
+                    <option>Luxo</option>
+                    <option>Esportivo</option>
+                    <option>Clássico</option>
+                </select>
+            </div>
+            <div id="products-list" class="grade-servicos">
+
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <footer class="rodape">
+        <p>© Elite Watches. Todos os direitos reservados.</p>
+        <div class="espaco-links">
+            <a href="suporte.html" onclick="showScreen('support')">Suporte</a>
+            <a href="notificaçao.html" onclick="showScreen('notifications')">Notificações</a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

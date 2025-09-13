@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notificaçao.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Notificações</title>
+</head>
+
+<body class="pagina-fundo">
+
+    <header class="cabecalho">
+        <div class="container-principal">
+            <h1 class="titulo-site"><a href="inicio.html">Elite Watches</a></h1>
+            <nav>
+                <ul class="menu-navegacao">
+                    <li><a href="#" onclick="showScreen('home')" class="link-menu">Início</a></li>
+                    <li><a href="#" onclick="showScreen('products')" class="link-menu">Produtos</a></li>
+                    <li><a href="#" onclick="showScreen('cart')" class="link-menu">Carrinho</a></li>
+                    <li><a href="#" onclick="showScreen('favorites')" class="link-menu">Favoritos</a></li>
+                    <li><a href="#" onclick="showScreen('blog')" class="link-menu">Blog</a></li>
+                    <li><a href="#" onclick="showScreen('profile')" class="link-menu">Perfil</a></li>
+                    <li><a href="#" onclick="showScreen('admin')" class="link-menu" id="admin-link"
+                            style="display:none;">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="conteudo-principal">
+        <section id="notifications-screen" class="screen fade-in">
+            <h2 class="titulo-notificacoes">Notificações</h2>
+            <div class="lista-notificacoes">
+                <div class="notificacao">
+                    <p class="mensagem-notificacao">
+                        Seu pedido #5841 foi enviado!
+                        <span class="data-notificacao">20 de fevereiro de 2025</span>
+                    </p>
+                </div>
+                <div class="notificacao">
+                    <p class="mensagem-notificacao">
+                        Nova mensagem recebida.
+                        <span class="data-notificacao">8 de abril de 2025</span>
+                    </p>
+                </div>
+                <p class="mensagem-notificacao">
+                    Estamos com saudades de você! Volte e aproveite 10% de desconto na sua próxima compra.
+                    <span class="data-notificacao">10 de Junho de 2025</span>
+                </p>
+            </div>
+            <div class="notificacao">
+                <p class="mensagem-notificacao">
+                    Obrigado pela sua compra! Seu pedido #5841 foi confirmado.
+                    <span class="data-notificacao">15 de fevereiro de 2025</span>
+                </p>
+            </div>
+            <div class="notificacao">
+                <p class="mensagem-notificacao">
+                    você recebeu um cupom de 15% de desconto para sua próxima compra!
+                    <span class="data-notificacao">5 de dezembro de 2025</span>
+                </p>
+            </div>
+            <div class="notificacao">
+                <p class="mensagem-notificacao">
+                    Aniversário de 1 ano da sua compra!
+                    <span class="data-notificacao">15 de fevereiro de 2025</span>
+                </p>
+            </div>
+            <div class="notificacao">
+                <p class="mensagem-notificacao">
+                    Obrigado pela sua compra! Seu pedido #4630 foi confirmado.
+                    <span class="data-notificacao">12 de outubro de 2025</span>
+                </p>
+            </div>
+            <div class="notificacao">
+                <p class="mensagem-notificacao">
+                    Novos lançamentos disponíveis na nossa loja!
+                    <span class="data-notificacao">22 de maio de 2025</span>
+                </p>
+            </div>
+            <div class="notificacao">
+                <p class="mensagem-notificacao">
+                    Obrigado pela sua compra! Seu pedido #5841 foi confirmado.
+                    <span class="data-notificacao">15 de fevereiro de 2025</span>
+                </p>
+            </div>
+
+            </div>
+        </section>
+        <footer class="rodape">
+            <p>© Elite Watches. Todos os direitos reservados.</p>
+            <div class="espaco-links">
+                <a href="suporte.html" onclick="showScreen('support')">Suporte</a>
+                <a href="notificaçao.html" onclick="showScreen('notifications')">Notificações</a>
+            </div>
+        </footer>
+
+</body>
+
+</html>
